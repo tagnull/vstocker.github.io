@@ -40,9 +40,8 @@ function languageSwitcher() {
   var lang_div = $('.language-switcher');
   var lang_text= '';
   var lang_list = ['en', 'br'];
-  var lang_list_countries = ['united_kingdom', 'brazil'];
   for (i = 0; i < lang_list.length; i++) { 
-    lang_text += '<a href="#lang-' + lang_list[i] + '" onclick="javascript:language(\'' + lang_list[i] + '\'); return false;"><img src="http://img.freeflagicons.com/thumb/round_icon/' + lang_list_countries[i] + '/' + lang_list_countries[i] + '_64.png" width="32"></a>';
+    lang_text += '<a href="#lang-' + lang_list[i] + '" onclick="javascript:language(\'' + lang_list[i] + '\'); return false;"><img src="assets/img/flags/' + lang_list[i] + '.png" width="32"></a>';
   }
   lang_div.html(lang_text);
 }
